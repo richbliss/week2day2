@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: woffAllCaps;
+    src: url("./font/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2");
+}
+@font-face {
+    font-family: woffNarrow;
+    src: url(./font/HqHm7BVC_nzzTui2lzQTDZBw1xU1rKptJj_0jans920.woff2);
+
+}
+@font-face {
+    font-family: woffBoldNarrow;
+    src: url(./font/KuTkTNzljLi-9-e4QiI83pBw1xU1rKptJj_0jans920.woff2);
+
+}
+@font-face {
+    font-family: woffBold;
+    src: url(./font/bH7276GfdCjMjApa_dkG6ZBw1xU1rKptJj_0jans920.woff2);
+
+}
+@font-face {
+    font-family: woffReg;
+    src: url(./font/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2);
+
+}
+@font-face {
+    font-family: woffRegBold;
+    src: url(./font/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2);
+
+}
+@font-face {
+    font-family: woffReg2;
+    src: url(./font/MDadn8DQ_3oT6kvnUq_2r_esZW2xOQ-xsNqO47m55DA.woff2);
+
+}
+@font-face {
+    font-family: woffRegBold2;
+    src: url(./font/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2);
+
+}
+@font-face {
+    font-family: woffFontAwesome;
+    src: url(./font/fontawesome-webfont.woff2);
+}
+
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+.header {
+    
+    height: auto;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    z-index:1;
+    display: flex;
+    transition: all 0.2s ease-in-out;
+    background-color:transparent;  
+}
+
+.header.active {
+    background:white;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+.menuContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    
+    background-image: url(./img/logo.png);
+    padding-top: 4px;
+    margin: auto 5px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 155px 31px;
+    height: 100%;
+    width: 175px;
+}
+
+.logo.active {
+    background-image: url("http://wideopentech.com/themes/wot-2013-gm/_/img/wot-logo-dark.png");
+
+}
+
+.logo a {
+    display:block;
+    height: 100%;
+    width: 155px;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    border: 0;
+    text-decoration: none;
+
+}
+
+.navMenu {
+    float: right;
+    padding: 5px 5px 5px 5px;
+    position: relative;
+    right: 0;
+}
+
+
+.navItem {
+    color: white;
+    font-family: woffReg;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.navItem a {
+    color: white;
+}
+.navItem.active {
+    color: #97A2A7;
+    
+}
+
+.navItem.active a:hover, a:active {
+    border-bottom: 4px solid #bdd336;
+}
+
+.navItem a:hover, a:active {
+    border-bottom: 4px solid #bdd336;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(240,240,240);
+}
+
+.mastHead {
+    margin: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 520px;
+    max-width: 100%;
+    background: url("./img/wot-masthead-dark.jpg") no-repeat center top;
+    background-size: cover;
+}
+.mastHeadCopy {
+    height: 520px;
+    width: 100%;
+    display: inline-block;
+    padding-top: 160px;
+}
+.bannerDiv {
+    margin:0 auto;
+    width: 60%;
+    padding: 0;
+}
+.yourDigital {
+    font-family: woffBoldNarrow;
+    font-size: 22px;
+}
+
+.workshop {
+    font-family: woffNarrow;
+    font-size: 150px;
+    line-height: 128px;
+    padding-top:0px;
+    padding-bottom:0px;
+
+}
+.subTitle {
+    font-family: woffBoldNarrow;
+    font-size: 20px;
+}
+.white{
+    color: white;
+}
+.green {
+    color: #bdd336;
+}
+.orange {
+    color: rgb(228, 142, 88);
+}
+
+.centerMe {
+    text-align: center;
+
+}
+
+#whtBar {
+
+    width: 75px;
+    height: 10px;
+    background-color: white;
+    display: inline-block;
+    margin: 0 20px 0 20px;
+
+}
+
+.mastHeadBtn {
+    height: 50px;
+    width: 300px;
+    background-color: #bdd336;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    font-family: woffReg2;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.mastHeadBtn:hover {
+    background-color: #c7e23a; /* light Green */
+    color: white;
+}
+
+.learnMore {
+    padding-top: 20px;
+}
+
+.introText{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #6A787C;
+    padding: 40px 0;
+}
+.introText p {
+    font-family: woffReg2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 0px;
+}
+.introText p strong {
+  font-weight: 500;
+}
+
+.introText img {
+    margin-top: 25px;
+
+}
+h4 {
+    line-height: 1.1;
+    font-family: woffNarrow;
+    text-transform: uppercase;
+    font-size: 42px;
+    font-weight: 300;
+    margin-top: 36px;
+    color: #6A787C;
+}
+
+h4 em {
+    color:#c7e23a;
+    font-style: normal;
+    font-family: woffBoldNarrow;
+}
+
+.threeItems{
+
+    margin: 0;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    max-height: 520px;
+    max-width: 100%;
+    height: 540px;
+    background: url("./img/threeItems.jpg") no-repeat center top;
+    background-size: cover;
+    background-color: #fff;
+
+}
+
+.howCanWeHelp{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    color: #6A787C;
+    padding: 40px 0;
+}
+
+.contactUsBtn {
+    height: 50px;
+    width: 175px;
+    background-color: #bdd336;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 25px;
+    color: white;
+    font-family: woffReg2;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.companiesWeWorkWith {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 1px 0px;
+}
+
+.coBlockContainer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+
+}
+
+.coBlock {
+    width: calc(100% / 3);
+    min-width: 330px;
+    display: inline-block;
+    position: relative;
+}
+
+.coBlockImg  {
+    display: block;
+    width: 100%;
+    height: auto;
+    
+}
+
+
+.overlay {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.coBlock:hover .overlay {
+  opacity: .7;
+}
+
+.overlayText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-family: woffReg2;
+    font-size: 18px;
+}
+
+
+
+
+.coBlock1 {
+
+}
+
+
+
+
+<!--   @media ------------------------------------------------------------------>
+
+@media (max-width: 768px) {
+    
+.mastHeadCopy {
+    height: 320px;
+}
+
+
+
+} /* end @media */
+
+
+/* 768 Tablet
+440 5.5 in 
+320 small smart phone
+*/
